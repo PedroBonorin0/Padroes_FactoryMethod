@@ -3,19 +3,20 @@ package Test;
 import factorymethod.IServico;
 import factorymethod.ServicoFactory;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
-class ServicoMensalidadeTest {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ServicoCompraTest {
 
   @Test
-  void devePagarMensalidade() {
-    IServico servico = ServicoFactory.novoServico("Mensalidade");
-    assertEquals("Mensalidade paga com sucesso!", servico.executar());
+  void deveConfirmarCompra() {
+    IServico servico = ServicoFactory.novoServico("Compra");
+    assertEquals("Compra confirmada!", servico.executar());
   }
 
   @Test
-  void deveCancelarAssinatura() {
-    IServico servico = ServicoFactory.novoServico("Mensalidade");
-    assertEquals("Assinatura cancelada com sucesso :(", servico.cancelar());
+  void deveCancelarCompra() {
+    IServico servico = ServicoFactory.novoServico("Compra");
+    assertEquals("Compra cancelada com sucesso :(", servico.cancelar());
   }
 }

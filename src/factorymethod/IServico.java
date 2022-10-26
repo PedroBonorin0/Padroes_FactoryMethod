@@ -1,2 +1,6 @@
-package factorymethod;public interface IServico {
+package factorymethod;
+
+public interface IServico {
+  String executar();
+  String cancelar();
 }

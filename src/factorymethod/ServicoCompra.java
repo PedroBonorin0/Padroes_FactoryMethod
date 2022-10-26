@@ -1,14 +1,14 @@
 package factorymethod;
 
-public class ServicoMensalidade implements IServico{
+public class ServicoCompra implements IServico{
 
   @Override
   public String executar() {
-    return "Mensalidade paga com sucesso!";
+    return "Compra confirmada!";
   }
 
   @Override
   public String cancelar() {
-    return "Mensalidade cancelada com sucesso!";
+    return "Compra cancelada com sucesso :(";
   }
 }

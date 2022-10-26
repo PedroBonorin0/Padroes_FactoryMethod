@@ -1,14 +1,14 @@
 package factorymethod;
 
-public class ServicoCompra implements IServico{
+public class ServicoAcessoEstadio implements IServico{
 
   @Override
   public String executar() {
-    return "Compra confirmada!";
+    return "Acesso ao próximo jogo confirmado!";
   }
 
   @Override
   public String cancelar() {
-    return "Compra cancelada com sucesso :(";
+    return "Acesso ao próximo jogo cancelado :(";
   }
 }
